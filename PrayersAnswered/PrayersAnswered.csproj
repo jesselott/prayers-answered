@@ -209,6 +209,14 @@
     <Compile Include="Migrations\201702010425208_CreatePrayerTable.Designer.cs">
       <DependentUpon>201702010425208_CreatePrayerTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702010453111_OverrideConventionsForDomain.cs" />
+    <Compile Include="Migrations\201702010453111_OverrideConventionsForDomain.Designer.cs">
+      <DependentUpon>201702010453111_OverrideConventionsForDomain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702010458274_RelationalChangeComment.cs" />
+    <Compile Include="Migrations\201702010458274_RelationalChangeComment.Designer.cs">
+      <DependentUpon>201702010458274_RelationalChangeComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -295,6 +303,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702010425208_CreatePrayerTable.resx">
       <DependentUpon>201702010425208_CreatePrayerTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702010453111_OverrideConventionsForDomain.resx">
+      <DependentUpon>201702010453111_OverrideConventionsForDomain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702010458274_RelationalChangeComment.resx">
+      <DependentUpon>201702010458274_RelationalChangeComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
