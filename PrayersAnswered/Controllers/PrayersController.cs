@@ -22,6 +22,7 @@ namespace PrayersAnswered.Controllers
 
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(PrayerFormViewModel viewModel)
         {
             if (!ModelState.IsValid)
