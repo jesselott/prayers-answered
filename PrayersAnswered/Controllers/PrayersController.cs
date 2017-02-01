@@ -24,7 +24,9 @@ namespace PrayersAnswered.Controllers
         [HttpPost]
         public ActionResult Create(PrayerFormViewModel viewModel)
         {
-            
+            if (!ModelState.IsValid)
+                return View("Create", viewModel);
+
             var prayer = new Prayer
             {
                 PosterId = User.Identity.GetUserId(),
