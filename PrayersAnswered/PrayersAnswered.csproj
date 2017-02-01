@@ -218,6 +218,14 @@
     <Compile Include="Migrations\201702010458274_RelationalChangeComment.Designer.cs">
       <DependentUpon>201702010458274_RelationalChangeComment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702011454365_AddFKPropertiesToPrayer.cs" />
+    <Compile Include="Migrations\201702011454365_AddFKPropertiesToPrayer.Designer.cs">
+      <DependentUpon>201702011454365_AddFKPropertiesToPrayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702011500186_AddFKPropertiesToPrayer1.cs" />
+    <Compile Include="Migrations\201702011500186_AddFKPropertiesToPrayer1.Designer.cs">
+      <DependentUpon>201702011500186_AddFKPropertiesToPrayer1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -312,6 +320,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702010458274_RelationalChangeComment.resx">
       <DependentUpon>201702010458274_RelationalChangeComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702011454365_AddFKPropertiesToPrayer.resx">
+      <DependentUpon>201702011454365_AddFKPropertiesToPrayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702011500186_AddFKPropertiesToPrayer1.resx">
+      <DependentUpon>201702011500186_AddFKPropertiesToPrayer1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

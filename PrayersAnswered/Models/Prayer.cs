@@ -7,8 +7,9 @@ namespace PrayersAnswered.Models
     public class Prayer
     {
         public int Id { get; set; }
-        [Required]
         public ApplicationUser Poster { get; set; }
+        [Required]
+        public string PosterId { get; set; }
         public DateTime DateTime { get; set; }
         public bool IsAnswered { get; set; }
         [Required]

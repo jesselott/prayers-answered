@@ -6,21 +6,26 @@
 }
 <br/>
 <h3>Pray</h3>
+
 <h6>About anything and everything! This is your place to meditate and pray to your God.</h6>
-<form>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Title)
-        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Content)
-        @Html.TextAreaFor(m => m.Content, new { @class = "form-control" })
-    </div>
-    <div class="form-group">
-        
-        <button name="submitButton" type="submit" value="Save" class="btn btn-primary">Submit!</button>
+@using (Html.BeginForm("Create", "Prayers"))
+{
+    <form>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Title)
+            @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Content)
+            @Html.TextAreaFor(m => m.Content, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
 
-    </div>
+            <button name="submitButton" type="submit" value="Save" class="btn btn-primary">Submit!</button>
 
-</form>
+        </div>
+
+    </form>
+
+}
 
