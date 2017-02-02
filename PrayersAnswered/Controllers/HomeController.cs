@@ -1,16 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using PrayersAnswered.Models;
+using System;
+using System.Data.Entity;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace PrayersAnswered.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext _context;
+
+        public HomeController()
+        {
+            _context = new ApplicationDbContext();
+        }
+        
         public ActionResult Index()
         {
-            return View();
+            var prayersList = _context.Prayers
+                .Include(p => p.Poster)
+                .Where(p => p.DateTime > DateTime.Now);
+                
+            return View(prayersList);
         }
 
         public ActionResult About()

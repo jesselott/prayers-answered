@@ -33,6 +33,7 @@ namespace PrayersAnswered.Controllers
                 PosterId = User.Identity.GetUserId(),
                 Title = viewModel.Title,
                 Content = viewModel.Content,
+                PrayingForYou = 0,
                 DateTime = DateTime.Now
                 
             };

@@ -26,8 +26,8 @@ textarea {
 
 /* BootStrap Overrides*/
 .navbar-inverse {
-    background-color: #00FFFF;
-    border-color: #00FFFF;
+    background-color: skyblue;
+    border-color: skyblue;
 }
 
 .navbar-inverse .navbar-brand {
@@ -37,6 +37,25 @@ textarea {
 .navbar-inverse .navbar-nav > li > a {
     color: #000000;
 }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: lightblue;
+}
+.dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #000;
+    border-bottom-color: #000;
+}
+.navbar-brand {
+    float: left;
+    padding: 15px 15px;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
 body {
     font-size: 17px;
 }

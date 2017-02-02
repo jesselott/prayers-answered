@@ -226,6 +226,10 @@
     <Compile Include="Migrations\201702011500186_AddFKPropertiesToPrayer1.Designer.cs">
       <DependentUpon>201702011500186_AddFKPropertiesToPrayer1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702020049071_PrayerCtor.cs" />
+    <Compile Include="Migrations\201702020049071_PrayerCtor.Designer.cs">
+      <DependentUpon>201702020049071_PrayerCtor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -326,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702011500186_AddFKPropertiesToPrayer1.resx">
       <DependentUpon>201702011500186_AddFKPropertiesToPrayer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702020049071_PrayerCtor.resx">
+      <DependentUpon>201702020049071_PrayerCtor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

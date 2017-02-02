@@ -19,5 +19,10 @@ namespace PrayersAnswered.Models
         public string Content { get; set; }
         public int PrayingForYou { get; set; }
         public ICollection<Comment> Comments { get; set; }
+
+        public Prayer()
+        {
+            PrayingForYou = 0;
+        }
     }
 }
