@@ -7,19 +7,20 @@
 <br/>
 <h3>Pray</h3>
 
-<h6>About anything and everything! This is your place to meditate and pray to your God.</h6>
+<h6>About anything and everything! Send your prayer into the world!</h6>
 @using (Html.BeginForm("Create", "Prayers"))
 {
+    <p class="alert alert-info">All fields are <strong>required</strong>.</p>
     @Html.AntiForgeryToken()
     <form>
         <div class="form-group">
             @Html.LabelFor(m => m.Title)
-            @Html.TextBoxFor(m => m.Title, new {@class = "form-control"})
+            @Html.TextBoxFor(m => m.Title, new {@class = "form-control", autofocus = "autofocus", placeholder = "Subject"})
             @Html.ValidationMessageFor(m => m.Title)
         </div>
         <div class="form-group">
             @Html.LabelFor(m => m.Content)
-            @Html.TextAreaFor(m => m.Content, new {@class = "form-control"})
+            @Html.TextAreaFor(m => m.Content, new {@class = "form-control", placeholder = "Pray Here!"})
             @Html.ValidationMessageFor(m => m.Content)
         </div>
         <div class="form-group">
