@@ -3,13 +3,44 @@
         ViewBag.Title = "Home Page";
     }
 
-<ul>
+<ul class="prayers">
+
+   
     @foreach (var prayer in Model)
     {
-        <li>@prayer.DateTime - @prayer.Poster.Name</li>
-        
+        <li>
+
+
+            <div class="fields">
+                <div class="title">
+                    @prayer.Title
+                </div>
+                <div class="prayingFor">
+                    @prayer.PrayingForYou.ToString($"{0} prayers")
+                </div>
+            </div>
+            <div class="details">
+                <div class="name">
+                    @prayer.Poster.Name
+                </div>
+                <div class="posted">
+                    @prayer.DateTime.ToString("g")
+                </div>
+
+                <div class="answered">
+                    @if (prayer.IsAnswered)
+                    {
+                        String.Format("{1}'s prayer was answered!<br/>" +
+                                      "See details!", prayer.Poster.Name);
+
+                    }
+                    
+                </div>
+            </div>
+
+
+
+        </li>
+
     }
-
-
-
 </ul>

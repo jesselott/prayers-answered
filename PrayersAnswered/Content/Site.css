@@ -104,3 +104,50 @@ form-control:focus {
     -ms-border-radius: 9px;
     border-radius: 9px;
 }
+
+/*Page-level styles*/
+
+
+.prayers {
+    list-style: none;
+}
+
+.prayers > li {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prayers > li .fields {
+    -ms-border-radius: 8px;
+    border-radius: 8px;    
+    background: skyblue;
+    width: 100px;
+}
+
+.prayers > li .fields .title {
+    
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    padding: 2px 6px;
+
+}
+
+.prayers > li .fields .prayingFor {
+    text-align: center;
+    background: aliceblue;
+    padding: 10px 12px;
+    
+}
+
+.prayers > li .details {
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+.prayers > li .details .name {
+    font-weight: bold;
+    display: block;
+}
