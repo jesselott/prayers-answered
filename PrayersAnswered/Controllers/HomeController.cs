@@ -19,7 +19,7 @@ namespace PrayersAnswered.Controllers
         {
             var prayersList = _context.Prayers
                 .Include(p => p.Poster)
-                .Where(p => p.DateTime > DateTime.Now);
+                .Where(p => p.DateTime < DateTime.Now);
                 
             return View(prayersList);
         }

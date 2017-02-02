@@ -57,6 +57,7 @@ namespace PrayersAnswered.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
+        
 
         [Display(Name = "Remember me?")]
         public bool RememberMe { get; set; }
@@ -79,6 +80,11 @@ namespace PrayersAnswered.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [StringLength(25)]
+        public string Name { get; set; }
+
     }
 
     public class ResetPasswordViewModel

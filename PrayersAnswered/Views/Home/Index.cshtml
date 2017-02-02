@@ -6,24 +6,8 @@
 <ul>
     @foreach (var prayer in Model)
     {
-        //<li>@prayer.DateTime - @prayer.Poster.UserName</li>
-            /*<div class="title">
-                <div class="Title">
-                    @prayer.Title
-                </div>
-                <div class="prayingForYou">
-                    @prayer.PrayingForYou.ToString()
-                </div>
-            </div>
-            <div class="posterDetails">
-                <div class="poster">
-                    @prayer.Poster
-                </div>
-                <div class="DateTime">
-                    @prayer.DateTime.ToString("D")
-                </div>
-            </div>
-        </li>*/
+        <li>@prayer.DateTime - @prayer.Poster.Name</li>
+        
     }
 
 

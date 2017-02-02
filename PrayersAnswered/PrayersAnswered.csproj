@@ -230,6 +230,10 @@
     <Compile Include="Migrations\201702020049071_PrayerCtor.Designer.cs">
       <DependentUpon>201702020049071_PrayerCtor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702020236085_AddNameToAppUser.cs" />
+    <Compile Include="Migrations\201702020236085_AddNameToAppUser.Designer.cs">
+      <DependentUpon>201702020236085_AddNameToAppUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -333,6 +337,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702020049071_PrayerCtor.resx">
       <DependentUpon>201702020049071_PrayerCtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702020236085_AddNameToAppUser.resx">
+      <DependentUpon>201702020236085_AddNameToAppUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
